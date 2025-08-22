@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+</head>
+</body>
+    <form>
+        <fieldset>
+            <legend>REGISTER FORM</legend>
+            <label for="first name">first name:</label>
+            <input type="first name" id="first name" name="first_name" placeholder="Enter your first name"required> 
+        
+            <label for="last name">last name:</label>
+            <input type="text" name="last_name" id="last-name" placeholder="Enter your last name" required>
+        
+            <label for="Email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        
+        
+            <label for="Telephone">Telephone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+        
+            <label for="Gender">Gender:</label>
+            <select type="Gender" id="gender"required>
+                <option value="">select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        
+            </fieldset>  
+        
+            <label for="password">password:</label>
+            <input type="password"required> <br> <br>
+        
+            <label for="re-type password">Re-type password:</label>
+            <input type="re-type password"required> <br> <br>
+             
+            <button>submit</button>
+        </fieldset>
+    </form>
+
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20PX;
+            padding: 20PX;
+         }
+         form{
+            max-width: 150PX;
+            margin: auto;
+            padding: 20px;
+            line-height:30px ;
+            margin-top: 50px;
+         }
+         label{
+            display: black;
+            margin-top: 5px;
+
+         }
+         input, select{
+            padding: 8px;
+
+         }
+         button{
+            margin-top: 15px ;
+            padding: 10px;
+            width: 100px;
+            background-color: rgb(66,66,175);
+            color: #fff
+            border-radius: 8px;
+            border:none;
+         }   
+           </style>
+         <script>
+
+            document.querySelector('button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form submission for demonstration
+                alert('Form submitted!');
+            });
+         </body>
+         
+         </html>
+
